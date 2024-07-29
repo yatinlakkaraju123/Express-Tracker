@@ -8,7 +8,7 @@ app.use(express.json())
 require('dotenv').config(); 
 mongoose.connect(process.env.MONGO_URI)
 
-//mongodb+srv://lakkarajuyatin61:s97hfJtgB0MliULg@cluster0.4zearzm.mongodb.net/
+
 app.post("/addExpenses",async (req,res)=>{
 const {title,expense} = req.body;
 
