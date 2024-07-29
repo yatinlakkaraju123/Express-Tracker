@@ -14,7 +14,7 @@ export default function Profile() {
     const email = user.email;
     //await axios.post("http://localhost:3001/addExpenses",{title,expense})
     await axios.post(
-      'http://127.0.0.1:3001/addExpenses',
+      'https://express-tracker-bxct.onrender.com/addExpenses',
       { email,title, expense },
       
     ).then((e)=>alert("Expense Added")).catch((e)=>console.log(e));

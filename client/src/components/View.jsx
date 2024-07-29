@@ -18,7 +18,7 @@ export default function View() {
     const email = user.email;
     const submit = async(e)=>{
         e.preventDefault();
-        await axios.post("http://127.0.0.1:3001/getExpenses",{email}).then(
+        await axios.post("https://express-tracker-bxct.onrender.com/getExpenses",{email}).then(
             (e)=>
             {   const fetchedData = e.data;
                     const localfromDate = new Date(fromDate).toLocaleDateString();
