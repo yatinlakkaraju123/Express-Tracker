@@ -1,14 +1,27 @@
 import React from 'react'
 import { useAuth0 } from "@auth0/auth0-react";
 import { Link } from "react-router-dom";
+import { NavbarDefault } from './NavbarDefault';
+import Navbar1 from './Navbar1';
 export default function Navbar() {
   const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
-
+ 
   return (
     <div>
 
       <div>
-        <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      
+     <Navbar1/>
+
+
+      </div>
+
+
+    </div>
+  )
+}
+/*
+<nav class="bg-white border-gray-200 dark:bg-gray-900">
           <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Expenses Tracker</span>
             <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
@@ -55,9 +68,5 @@ export default function Navbar() {
             </div>
           </div>
         </nav>
-      </div>
 
-
-    </div>
-  )
-}
+*/
